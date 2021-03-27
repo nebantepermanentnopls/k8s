@@ -5,7 +5,6 @@ metadata:
   labels:
     owner: leha
 spec:
-  replicas: 10
   selector:
     matchLabels:
       project: super-prj
@@ -30,7 +29,7 @@ spec:
     apiVersion: apps/v2beta1v1
     kind: Deployment
     name: nginx-deploy
-  minReplicas: 10
+  minReplicas: 3
   maxReplicas: 20
   metrics:
     - type: Resource
