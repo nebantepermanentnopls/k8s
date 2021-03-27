@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-sercie
+  labels:
+    owner: leha
+spec:
+  selector:
+    project: super-prj
+  ports:
+    - name: nginx-port
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
