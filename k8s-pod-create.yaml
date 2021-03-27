@@ -6,3 +6,5 @@ spec:
   containers:
     - name: flatris-container
       image: nebantepermanentnopls/flatris
+      ports:
+        - containerPort: 3000
