@@ -10,6 +10,6 @@ spec:
   ports:
     - name: nginx-port
       protocol: TCP
-      port: 80
-      targetPort: 80
-  type: NodePort
+      port: 88          #service port
+      targetPort: 80    #pod port
+  type: LoadBalancer
