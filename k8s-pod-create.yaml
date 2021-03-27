@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flatris
+spec:
+  containers:
+    - name: flatris-container
+      image: nebantepermanentnopls/flatris
