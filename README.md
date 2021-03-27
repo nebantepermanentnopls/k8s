@@ -31,3 +31,5 @@
 
 ```kubectl delete -f deploy-create.yaml``` - удалить сущности из манифест файла;
 
+```kubectl expose deploy deploy-name --type ClusterIP --port 80``` - создать сервис, типы: ClusterIP, ExternalName, LoadBalancer, NodePort;
+
