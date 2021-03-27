@@ -1,10 +1,17 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: flatris
+  name: two-container-pod
+  labels:
+    owner: leha
 spec:
   containers:
     - name: flatris-container
       image: nebantepermanentnopls/flatris
       ports:
         - containerPort: 3000
+
+    - name: nginx
+      image: nginx
+      ports:
+        - containerPort: 80
