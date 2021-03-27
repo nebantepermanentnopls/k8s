@@ -1,4 +1,4 @@
-##Команды для k8s
+№Команды для k8s
 
 ```kubectl get pods``` - показать pods(deploy, nodes, hpa, rs) кластера;
 
